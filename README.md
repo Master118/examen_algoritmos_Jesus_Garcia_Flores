@@ -56,4 +56,4 @@ El ejercicio 1 lo puede descargar y verificar en un navegador.
 
 
 --------------------------------------------------------------------------------------
-Para el ejercicio 2 lo puede descargar y ejecutar por medio de CMD CON \Python\ejercicio2>python ejercicio2.py
+Para el ejercicio 2 lo puede descargar y ejecutar por medio de CMD CON \ejercicio2>python ejercicio2.py
