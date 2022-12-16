@@ -49,3 +49,8 @@ Sería fácil crear nuevas factorías y añadirlas al sistema para crear tortas 
 Caso de uso Factory Method
 Se me ocurre una tienda en la que puedes realizar pagos de diferente manera, en dinero o por pago por tarjeta, 
 pero es posible que en un futuro se pueda pagar de más formas.
+
+--------------------------------------------------------------------------------------
+
+El ejercicio 1 lo puede descargar y verificar en un navegador.
+
