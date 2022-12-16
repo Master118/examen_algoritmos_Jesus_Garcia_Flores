@@ -1,0 +1,42 @@
+ <md-table-container>
+                <table md-table ng-model="ListaUsuarios.data" multiple="false" md-progress="promise">
+                    <thead md-head md-order="query.order">
+                        <tr md-row>
+                            <th md-column><span>Opciones</span></th>
+							<th md-column><span>Nombre</span></th>
+							<th md-column><span>Email</span></th>
+							<th md-column><span>Direccion</span></th>
+							<th md-column><span>Telefeono</span></th>
+							<th md-column><span>Fecha de nacimiento</span></th>
+							<th md-column><span>Edad</span></th>
+                   
+                    </thead>
+                    <tbody md-body>
+                        <tr md-row ng-repeat="elemento in Listasolicitudes.data | filter: filter.search | orderBy: query.order | limitTo: query.limit : (query.page -1) * query.limit">
+                            <td md-cell>
+                                <md-button class="btn1"
+                                           ng-href="@Url.Content("{{elemento.BtnDetalle}}")?idSolicitud={{elemento.IdSolicitud}}&searchkey=@ViewBag.searchkey">
+                                    <md-icon id="detalle" md-svg-src="eye" class="material-icons"></md-icon>
+                                    <md-tooltip md-direction="center">
+                                        Editar
+                                    </md-tooltip>
+                                </md-button>
+                                <md-button class="btn1"
+                                           ng-show="elemento.ShowBtnEdicion"
+                                           ng-href="@Url.Content("{{elemento.BtnEdicion}}")?idSolicitud={{elemento.IdSolicitud}}&searchkey=@ViewBag.searchkey">
+                                    <md-icon id="solicitud" md-svg-src="pencil" class="material-icons"></md-icon>
+                                    <md-tooltip md-direction="center" ng-show="elemento.EnableEdit">
+                                        Borrar
+                                    </md-tooltip>
+                                </md-button>
+                            </td>
+                            <td md-cell>{{ elemento.Nombre }}</td>
+                            <td md-cell>{{ elemento.Email}}</td>
+                            <td md-cell>{{ elemento.Direccion}}</td>
+                            <td md-cell>{{ elemento.Telefeono}}</td>
+                            <td md-cell>{{ elemento.Fecha de nacimiento}}</td>
+                            <td md-cell>{{ elemento.Edad}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-table-container>
