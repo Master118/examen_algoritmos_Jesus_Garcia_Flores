@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Primer ejercicio Algoritmos</h3>
+<p>Primeros 3 valores </p>
+<input type="number" id="valor1" value="" min="1" max="100">
+<input type="number" id="valor2" value="" min="1" max="100">
+<input type="number" id="valor3" value="" min="1" max="100">
+<p>Segundos 3 valores</p>
+<input type="number" id="valor4" value="" min="1" max="100">
+<input type="number" id="valor5" value="" min="1" max="100">
+<input type="number" id="valor6" value="" min="1" max="100">
+
+
+<p>Usar el botón para ver puntuación</p>
+
+<button onclick="CrearArreglo()">Continuar</button>
+
+
+<script>
+function CrearArreglo() {
+var valor1 = document.getElementById("valor1").value;
+var valor2 = document.getElementById("valor2").value;
+var valor3 = document.getElementById("valor3").value;
+var valor4 = document.getElementById("valor4").value;
+var valor5 = document.getElementById("valor5").value;
+var valor6 = document.getElementById("valor6").value;
+if(valor1 == "" || valor2 == "" || valor3 == ""
+  || valor4 == "" || valor5 == "" || valor6 == "")
+ {
+alert("Ingrese todos los valores");
+ }
+else
+	{
+var Alice = [valor1,valor2,valor3];
+var Bob = [valor4,valor5,valor6];
+VerPuntuacion(Alice,Bob);
+	}
+	                   };
+					   
+function VerPuntuacion(Alice,Bob) {
+
+var array1 = Alice;
+var array2= Bob;
+
+var resultado = [0,0];
+
+for (var i = 0; i < array1.length ; i++) 
+                           {
+if(array1[i] < array2[i])
+	{
+	resultado[0]++;
+	}
+ else if(array1[i] > array2[i])
+	{
+	resultado[1]++;
+	}
+
+
+                           }					   
+		alert(resultado);				   
+
+                                  };
+</script>
+
+</body>
+</html>
