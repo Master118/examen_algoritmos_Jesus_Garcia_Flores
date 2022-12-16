@@ -54,3 +54,6 @@ pero es posible que en un futuro se pueda pagar de más formas.
 
 El ejercicio 1 lo puede descargar y verificar en un navegador.
 
+
+--------------------------------------------------------------------------------------
+Para el ejercicio 2 lo puede descargar y ejecutar por medio de CMD CON \Python\ejercicio2>python ejercicio2.py
