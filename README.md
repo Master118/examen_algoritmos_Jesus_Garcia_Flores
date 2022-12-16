@@ -57,3 +57,9 @@ El ejercicio 1 lo puede descargar y verificar en un navegador.
 
 --------------------------------------------------------------------------------------
 Para el ejercicio 2 lo puede descargar y ejecutar por medio de CMD CON \ejercicio2>python ejercicio2.py
+
+
+
+--------------------------------------------------------------------------------------
+
+El crud lo hice como prueba pero si gustan puedo hacer uno funcinal, es una idea de como trabajo
